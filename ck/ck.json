@@ -1,0 +1,20 @@
+{
+    "urls": [
+        {
+            "url": "clan://localhost/TVBox/profiles/core.json",
+            "name": "精选资源"
+        },
+        {
+            "url": "clan://localhost/TVBox/profiles/py.json",
+            "name": "屁歪哔哩"
+        },
+        {
+            "url": "clan://localhost/TVBox/profiles/tangs.json",
+            "name": "唐三本地"
+        },
+        {
+            "url": "clan://localhost/TVBox/profiles/bili.json",
+            "name": "爪洼哔哩"
+        }
+    ]
+}
