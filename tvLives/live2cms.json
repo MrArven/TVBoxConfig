@@ -1,7 +1,7 @@
 [
     {
         "name": "本地直播",
-        "url": "http://127.0.0.1:9978/file/mBox/tvLives/fmm.txt",
+        "url": "./tvLives/fmm.txt",
         "img": ""
     },
     {
