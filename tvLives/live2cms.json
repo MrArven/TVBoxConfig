@@ -1,0 +1,12 @@
+[
+    {
+        "name": "本地直播",
+        "url": "http://127.0.0.1:9978/file/mBox/tvLives/fmm.txt",
+        "img": ""
+    },
+    {
+        "name": "直播在线",
+        "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+        "img": ""
+    }
+]
