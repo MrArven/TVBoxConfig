@@ -1,10 +1,5 @@
 [
     {
-        "name": "本地直播",
-        "url": "https://gh.llkk.cc/https://raw.githubusercontent.com/MrArven/TVBoxConfig/main/tvLives/fmm.txt",
-        "img": ""
-    },
-    {
         "name": "直播在线",
         "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
         "img": ""
