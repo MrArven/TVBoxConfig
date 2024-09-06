@@ -35,7 +35,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "order_num": 1,
-            "ext": "./js/drpy/直播/直播转点.js?type=url&params=../tvLives/live2cms.json"
+            "ext": "./js/drpy/直播/直播转点.js?type=url&params=https://gh.llkk.cc/https://raw.githubusercontent.com/MrArven/TVBoxConfig/main/tvLives/live2cms.json"
         },
         {
             "key": "drpy_js_聚合采集",
@@ -44,7 +44,7 @@
             "api": "./libs/drpy/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 1,
-            "ext": "./js/drpy/采集/采集脚本.js?type=url&params=../js/drpy/采集/采集静态[zy].json$1$1"
+            "ext": "./js/drpy/采集/采集脚本.js?type=url&params=https://gh.llkk.cc/https://raw.githubusercontent.com/MrArven/TVBoxConfig/main/js/drpy/采集/采集静态[zy].json$1$1"
         },
         {
             "key": "drpy_js_厂长资源",
