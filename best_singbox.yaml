@@ -1,0 +1,283 @@
+{
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "223.5.5.5",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": "connectivitycheck.gstatic.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      },
+      {
+        "domain_suffix": ".cn",
+        "server": "dns-direct"
+      },
+      {
+        "rule_set": [
+          "geoip-cn",
+          "geosite-cn"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.147.22",
+        "104.17.148.22",
+        "172.67.214.246",
+        "104.21.83.62",
+        "2606:4700:3030::6815:533e",
+        "2606:4700:3030::ac43:d6f6"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 12334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 16450
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "ss香港1☀",
+        "ss香港2☀",
+        "ss香港3☀",
+        "ss香港4☀",
+        "ss台湾☀",
+        "射手座_粉妹P移动|840",
+        "射手座_粉妹P移动|692",
+        "射手座_粉妹P移动|808"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "ss香港1☀",
+        "ss香港2☀",
+        "ss香港3☀",
+        "ss香港4☀",
+        "ss台湾☀",
+        "射手座_粉妹P移动|840",
+        "射手座_粉妹P移动|692",
+        "射手座_粉妹P移动|808"
+      ],
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "interval": "10m0s",
+      "tolerance": 1,
+      "idle_timeout": "30m0s"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ss香港1☀",
+      "server": "cname01-njidwp5y5gbd7lbd.xiaowangzi777.com",
+      "server_port": 8511,
+      "method": "aes-128-gcm",
+      "password": "KxMegb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ss香港2☀",
+      "server": "cname01a-njidwp5y5gbd7lbd.xiaowangzi777.com",
+      "server_port": 8511,
+      "method": "aes-128-gcm",
+      "password": "KxMegb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ss香港3☀",
+      "server": "cname01b-njidwp5y5gbd7lbd.bestugali.com",
+      "server_port": 8511,
+      "method": "aes-128-gcm",
+      "password": "KxMegb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ss香港4☀",
+      "server": "cname01c-njidwp5y5gbd7lbd.bestugali.com",
+      "server_port": 8511,
+      "method": "aes-128-gcm",
+      "password": "KxMegb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ss台湾☀",
+      "server": "cname01c-njidwp5y5gbd7lbd.bestugali.com",
+      "server_port": 8551,
+      "method": "aes-128-gcm",
+      "password": "KxMegb"
+    },
+    {
+      "type": "vmess",
+      "tag": "射手座_粉妹P移动|840",
+      "server": "183.238.202.171",
+      "server_port": 42866,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64
+    },
+    {
+      "type": "vmess",
+      "tag": "射手座_粉妹P移动|692",
+      "server": "183.237.20.158",
+      "server_port": 41042,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64
+    },
+    {
+      "type": "vmess",
+      "tag": "射手座_粉妹P移动|808",
+      "server": "183.238.202.171",
+      "server_port": 50077,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-30",
+        "sleep": "2-8"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "process_name": [
+          "Hiddify",
+          "Hiddify.exe",
+          "HiddifyCli",
+          "HiddifyCli.exe"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "domain_suffix": ".cn",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geoip-cn",
+          "geosite-cn"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-cn.srs",
+        "update_interval": "120h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-cn.srs",
+        "update_interval": "120h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:16756",
+      "secret": "Xaf15sk2YXp43GP0"
+    }
+  }
+}
