@@ -1,0 +1,481 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: true
+    default-nameserver: [223.5.5.5, 223.6.6.6]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://dns.alidns.com/dns-query']
+    fallback: ['https://dns.alidns.com/dns-query', 'https://dns.cloudflare.com/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+
+proxies:
+- name: 🌟HK-iepl-super6
+  type: ss
+  server: iepl1.forlive.live
+  port: 50002
+  password: a4ac2592-28e7-4927-94b3-277edae0869a
+  cipher: chacha20-ietf-poly1305
+
+- name: 🇭🇰香港①
+  server: ukhtw.u92.dfnode.top
+  port: 19313
+  client-fingerprint: chrome
+  type: vmess
+  uuid: d2318780-3476-3300-b30d-bce8f707e991
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: download.windowsupdate.com
+
+- name: 🇭🇰香港②
+  server: fvhod.downca.potatoeswater.com
+  port: 19313
+  client-fingerprint: chrome
+  type: vmess
+  uuid: d2318780-3476-3300-b30d-bce8f707e991
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: download.windowsupdate.com
+
+- name: 🇭🇰香港③
+  server: clfab.downca.potatoeswater.com
+  port: 30569
+  client-fingerprint: chrome
+  type: vmess
+  uuid: d2318780-3476-3300-b30d-bce8f707e991
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: download.windowsupdate.com
+
+
+- name: 🌟射手座_香港1
+  server: cname01-njidwp5y5gbd7lbd.xiaowangzi777.com
+  port: 8511
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: KxMegb
+  tfo: false
+  
+- name: 🌟射手座_香港2
+  server: cname01d-njidwp5y5gbd7lbd.bestugali.com
+  port: 8511
+  client-fingerprint: chrome
+  type: ss
+  cipher: aes-128-gcm
+  password: KxMegb
+  tfo: false
+  
+- name: 🌟射手座_移动|692
+  server: 183.237.20.158
+  port: 41042
+  client-fingerprint: chrome
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+
+- name: 🌟射手座_日本
+  server: r2.xinyo.me
+  port: 40701
+  client-fingerprint: chrome
+  type: vmess
+  uuid: c11c7eb6-d1ec-4af3-a6fa-ea12e095db1b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+
+- name: 🌟射手座_台湾
+  server: r1.xinyo.me
+  port: 40201
+  client-fingerprint: chrome
+  type: vmess
+  uuid: c11c7eb6-d1ec-4af3-a6fa-ea12e095db1b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  
+- name: 🌟射手座_新加坡
+  server: r1.xinyo.me
+  port: 40301
+  client- fingerprint: chrome
+  type: vmess
+  uuid: c11c7eb6-d1ec-4af3-a6fa-ea12e095db1b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  
+- name: 🌟新加坡🅜🅒18
+  server: tacm.ix2.edge.kunlunae.com
+  port: 50137
+  client-fingerprint: chrome
+  type: ssr
+  cipher: chacha20
+  password: mPQ5C9
+  protocol: auth_chain_a
+  obfs: tls1.2_ticket_auth
+  protocol-param: 40752020:X4VDB0
+  obfs-param: ""
+  udp: true 
+
+- name: 🌟GLaDOS-HK-02
+  type: ss
+  server: 84858fa.h2.glados-config.net
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 84858fa.dl.microsoft.eu:73643
+
+- name: 🌟GLaDOS-TW-01
+  type: ss
+  server: 84858fa.t1.glados-config.net
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 84858fa.dl.microsoft.hu:73643
+
+- name: 🌟GLaDOS-TW-02
+  type: ss
+  server: 84858fa.t2.glados-config.net
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 84858fa.dl.nintendo.jp:73643
+
+- name: 🌟GLaDOS-TW-03
+  type: ss
+  server: 84858fa.t3.glados-config.net
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 84858fa.dl.microsoft.de:73643
+
+- name: 🌟GLaDOS-TW-04
+  type: ss
+  server: 84858fa.t4.glados-config.net
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 84858fa.dl.microsoft.io:73643
+
+- name: 🌟GLaDOS-TW-05
+  type: ss
+  server: 84858fa.t5.glados-config.net
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 84858fa.dl.microsoft.hu:73643
+
+- name: 🌟GLaDOS-TW-06
+  type: ss
+  server: 84858fa.t6.glados-config.net
+  port: 2377
+  cipher: chacha20-ietf-poly1305
+  password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 84858fa.dl.microsoft.cl:73643
+
+- name: 🌟TW-iepl-super2
+  type: ss
+  server: iepl4.forlive.live
+  port: 50003
+  password: a4ac2592-28e7-4927-94b3-277edae0869a
+  cipher: chacha20-ietf-poly1305
+      
+- name: 🌟US-iepl-super1
+  type: ss
+  server: iepl5.forlive.live
+  port: 50118
+  password: a4ac2592-28e7-4927-94b3-277edae0869a
+  cipher: chacha20-ietf-poly1305
+  
+- name: 🌟vless-ws-tls-IBM-ori
+  type: vless
+  server: ns032.name.cloud.ibm.com
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: mositr.freenods.sbs
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: mositr.freenods.sbs
+      
+- name: 🌟vless-ws-tls-wto-ori
+  type: vless
+  server: www.wto.org
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: mositr.freenods.sbs
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: mositr.freenods.sbs
+      
+- name: 🌟vless-ws-tls-fbi-ori
+  type: vless
+  server: fbi.gov
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: mositr.freenods.sbs
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: mositr.freenods.sbs
+        
+- name: 🌟vless-ws-tls-US7
+  type: vless
+  server: 43.153.80.208
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: mositr.freenods.sbs
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: mositr.freenods.sbs
+      
+- name: 🌟vless-ws-tls-US8-ori
+  type: vless
+  server: 104.19.53.103
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: mositr.freenods.sbs
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: mositr.freenods.sbs 
+      
+- name: 🌟vless-ws-USV61
+  type: vless
+  server: 2a06:98c1:310f:75fd:6c28:e89d:a143:7afb 
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs
+      
+- name: 🌟vless-ws-USV62
+  type: vless
+  server: 2606:4700:8:a8d:3bf2:4be7:c88c:c23e
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs
+      
+- name: 🌟vless-ws-USV63
+  type: vless
+  server: 2400:cb00:f00e:d82d:c943:9098:7ad5:d249
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs
+     
+- name: 🌟vless-ws-USV64
+  type: vless
+  server: 2606:4700:3:47de:960b:9180:d7ba:7b90
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs
+      
+- name: 🌟vless-ap-GB1-ori
+  type: vless
+  server: 217.163.76.88
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs 
+      
+- name: 🌟vless-ap-GB2-ori
+  type: vless
+  server: 217.163.76.59
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs  
+      
+- name: 🌟vless-ap-GB3-ori
+  type: vless
+  server: 217.163.76.107
+  port: 2053
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs 
+      
+- name: 🌟vless-ap-GB4-ori
+  type: vless
+  server: 217.163.76.89
+  port: 2053
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs 
+       
+- name: 🌟vless-ap-GB5-ori
+  type: vless
+  server: 217.163.76.59
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: mositr.freenods.sbs
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: mositr.freenods.sbs
+      
+- name: 🌟vless-ap-US1-ori
+  type: vless
+  server: 162.159.58.39
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs 
+      
+- name: 🌟vless-ap-US2-ori
+  type: vless
+  server: 162.159.58.79
+  port: 443
+  uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+  udp: true
+  tls: true
+  network: ws
+  servername: yifenjichang.freenods.sbs
+  ws-opts:
+    path: "@yifenjichang"
+    headers:
+      Host: yifenjichang.freenods.sbs 
+  
+proxy-providers: {WARP: {type: http, path: ./warp.yaml, url: 'https://neko-warp.nloli.xyz/neko_warp.yaml', interval: 3600, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}}}
+proxy-groups:
+    - { name: PROXY, type: select, proxies: [ 🌟HK-iepl-super6, 🇭🇰香港①, 🇭🇰香港②, 🇭🇰香港③, 🌟射手座_香港1, 🌟射手座_香港2, 🌟射手座_台湾, 🌟射手座_日本, 🌟射手座_移动|692, 🌟射手座_新加坡, 🌟新加坡🅜🅒18, 🌟GLaDOS-TW-01, 🌟GLaDOS-TW-02, 🌟GLaDOS-TW-03, 🌟GLaDOS-TW-04, 🌟GLaDOS-TW-05, 🌟GLaDOS-TW-06, 🌟GLaDOS-HK-02, 🌟TW-iepl-super2, 🌟US-iepl-super1, 🌟vless-ws-tls-IBM-ori, 🌟vless-ws-tls-wto-ori, 🌟vless-ws-tls-fbi-ori, 🌟vless-ws-tls-US7, 🌟vless-ws-tls-US8-ori, 🌟vless-ws-USV61, 🌟vless-ws-USV62, 🌟vless-ws-USV63, 🌟vless-ws-USV64, 🌟vless-ap-GB1-ori, 🌟vless-ap-GB2-ori, 🌟vless-ap-GB3-ori, 🌟vless-ap-GB4-ori, 🌟vless-ap-GB5-ori, 🌟vless-ap-US1-ori, 🌟vless-ap-US2-ori]}
+rule-providers:
+    reject: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt', path: ./ruleset/reject.yaml, interval: 86400 }
+    icloud: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt', path: ./ruleset/icloud.yaml, interval: 86400 }
+    apple: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt', path: ./ruleset/apple.yaml, interval: 86400 }
+    proxy: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt', path: ./ruleset/proxy.yaml, interval: 86400 }
+    direct: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt', path: ./ruleset/direct.yaml, interval: 86400 }
+    private: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt', path: ./ruleset/private.yaml, interval: 86400 }
+    telegramcidr: { type: http, behavior: ipcidr, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt', path: ./ruleset/telegramcidr.yaml, interval: 86400 }
+    cncidr: { type: http, behavior: ipcidr, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt', path: ./ruleset/cncidr.yaml, interval: 86400 }
+    lancidr: { type: http, behavior: ipcidr, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt', path: ./ruleset/lancidr.yaml, interval: 86400 }
+    applications: { type: http, behavior: classical, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt', path: ./ruleset/applications.yaml, interval: 86400 }
+rules:
+    - 'RULE-SET,applications,DIRECT'
+    - 'RULE-SET,private,DIRECT'
+    - 'RULE-SET,reject,REJECT'
+    - 'RULE-SET,icloud,DIRECT'
+    - 'RULE-SET,apple,DIRECT'
+    - 'RULE-SET,proxy,PROXY'
+    - 'RULE-SET,direct,DIRECT'
+    - 'RULE-SET,lancidr,DIRECT'
+    - 'RULE-SET,cncidr,DIRECT'
+    - 'RULE-SET,telegramcidr,PROXY'
+    - 'GEOIP,LAN,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,PROXY'
