@@ -5,4 +5,4 @@ TVBox自用资源
 
 https://raw.githubusercontent.com/MrArven/TVBoxConfig/refs/heads/main/clash.yaml
 
-https://ghp.ci/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json
+https://ghp.ci/https://raw.githubusercontent.com/MrArven/TVBoxConfig/refs/heads/main/youxuan_clash.yaml
