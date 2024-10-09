@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2024-09-30 16:56:30
+#  创建时间：2024-10-09 10:44:40
 #  模版：v2rayse默认模版
-#  节点数量：19
+#  节点数量：15
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -15,24 +15,19 @@ external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"vmess","name":"🇭🇰_香港🇭🇰2","server":"fvhod.downca.potatoeswater.com","port":"19313","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
   - {"type":"vmess","name":"谷主分享_🦕","server":"clfab.downca.potatoeswater.com","port":"30569","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇨🇳_台湾1","server":"fknae.downca.potatoeswater.com","port":"39260","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇭🇰Hongkong077","server":"console.02.aliyun.aq.kunlunaqs.com","port":45578,"cipher":"chacha20-ietf-poly1305","password":"7243745919d6de49a5db"}
+  - {"type":"ss","name":"🌟HK-iepl-super6","server":"iepl1.forlive.live","port":50002,"cipher":"chacha20-ietf-poly1305","password":"a4ac2592-28e7-4927-94b3-277edae0869a"}
   - {"type":"ss","name":"🌟TW-iepl-super2","server":"iepl4.forlive.live","port":50003,"cipher":"chacha20-ietf-poly1305","password":"a4ac2592-28e7-4927-94b3-277edae0869a"}
-  - {"type":"vmess","name":"🇭🇰_香港🇭🇰1","server":"ukhtw.u92.dfnode.top","port":"19313","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳_台湾1","server":"fknae.downca.potatoeswater.com","port":"39260","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇹🇼Taiwan031","server":"console.03.aliyun.aq.kunlunaqs.com","port":45915,"cipher":"aes-128-gcm","password":"b74518fb49bd645e6ce7"}
+  - {"type":"ss","name":"🇯🇵Japan029","server":"console.02.aliyun.aq.kunlunaqs.com","port":45913,"cipher":"aes-128-gcm","password":"c8960ca4a0add435fc34"}
+  - {"type":"ss","name":"🇯🇵Japan028","server":"console.02.aliyun.aq.kunlunaqs.com","port":45912,"cipher":"aes-128-gcm","password":"97998add7bf4fea885ef"}
   - {"type":"vmess","name":"🇭🇰_香港🇭🇰4","server":"wydpn.u92.dfnode.top","port":"19300","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇭🇰_香港🇭🇰1","server":"ukhtw.u92.dfnode.top","port":"19313","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
   - {"type":"vmess","name":"🇨🇳_台湾2","server":"dywma.u92.dfnode.top","port":"39260","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"台湾01","server":"r1.xinyo.me","port":"40201","uuid":"c11c7eb6-d1ec-4af3-a6fa-ea12e095db1b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇺🇸USA025","server":"console.02.aliyun.aq.kunlunaqs.com","port":45908,"cipher":"aes-128-gcm","password":"97c3cf442df2d7099275"}
   - {"type":"ss","name":"🌟US-iepl-super1","server":"iepl5.forlive.live","port":50118,"cipher":"chacha20-ietf-poly1305","password":"a4ac2592-28e7-4927-94b3-277edae0869a"}
-  - {"name":"V4-3639|香港|x1.0","type":"ssr","server":"cd69.cdn.node.a.ddnsketq.xyz","port":13639,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3640|香港|x1.5","type":"ssr","server":"cd69.cdn.node.a.ddnsketq.xyz","port":13640,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3641|香港|x2.0","type":"ssr","server":"suyhks.cdn.node.a.ddnsketq.xyz","port":13641,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3642|香港|x1.5","type":"ssr","server":"sjgysy.cdn.node.a.ddnsketq.xyz","port":13642,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3643|香港|x2.0","type":"ssr","server":"suyhks.cdn.node.a.ddnsketq.xyz","port":13643,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3644|香港|x2.0","type":"ssr","server":"suyhks.cdn.node.a.ddnsketq.xyz","port":13644,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3725|日本|x2.0","type":"ssr","server":"syrbp.cdn.node.a.ddnsketq.xyz","port":13725,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3726|日本|x2.0","type":"ssr","server":"syrbp.cdn.node.a.ddnsketq.xyz","port":13726,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3727|日本|x2.0","type":"ssr","server":"syrbp.cdn.node.a.ddnsketq.xyz","port":13727,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  - {"name":"V4-3728|日本|x1.0","type":"ssr","server":"syrbp.cdn.node.a.ddnsketq.xyz","port":13728,"cipher":"rc4-md5","password":"Cskw6d","protocol":"auth_aes128_md5","protocol-param":"453850:sWmSQe","obfs":"tls1.2_ticket_auth","obfsparam":"e9fd6453850.microsoft.com"}
-  
+  - {"type":"ss","name":"🇺🇸USA086","server":"console.02.aliyun.aq.kunlunaqs.com","port":45584,"cipher":"chacha20-ietf-poly1305","password":"4605c34b957ab8e1001b"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -41,23 +36,19 @@ proxy-groups:
       - DIRECT
       - 🇭🇰_香港🇭🇰2
       - 谷主分享_🦕
-      - 🇨🇳_台湾1
+      - 🇭🇰Hongkong077
+      - 🌟HK-iepl-super6
       - 🌟TW-iepl-super2
-      - 🇭🇰_香港🇭🇰1
+      - 🇨🇳_台湾1
+      - 🇹🇼Taiwan031
+      - 🇯🇵Japan029
+      - 🇯🇵Japan028
       - 🇭🇰_香港🇭🇰4
+      - 🇭🇰_香港🇭🇰1
       - 🇨🇳_台湾2
-      - 台湾01
+      - 🇺🇸USA025
       - 🌟US-iepl-super1
-      - V4-3639|香港|x1.0
-      - V4-3640|香港|x1.5
-      - V4-3641|香港|x2.0
-      - V4-3642|香港|x1.5
-      - V4-3643|香港|x2.0
-      - V4-3644|香港|x2.0
-      - V4-3725|日本|x2.0
-      - V4-3726|日本|x2.0
-      - V4-3727|日本|x2.0
-      - V4-3728|日本|x1.0
+      - 🇺🇸USA086
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -66,23 +57,19 @@ proxy-groups:
     proxies:
       - 🇭🇰_香港🇭🇰2
       - 谷主分享_🦕
-      - 🇨🇳_台湾1
+      - 🇭🇰Hongkong077
+      - 🌟HK-iepl-super6
       - 🌟TW-iepl-super2
-      - 🇭🇰_香港🇭🇰1
+      - 🇨🇳_台湾1
+      - 🇹🇼Taiwan031
+      - 🇯🇵Japan029
+      - 🇯🇵Japan028
       - 🇭🇰_香港🇭🇰4
+      - 🇭🇰_香港🇭🇰1
       - 🇨🇳_台湾2
-      - 台湾01
+      - 🇺🇸USA025
       - 🌟US-iepl-super1
-      - V4-3639|香港|x1.0
-      - V4-3640|香港|x1.5
-      - V4-3641|香港|x2.0
-      - V4-3642|香港|x1.5
-      - V4-3643|香港|x2.0
-      - V4-3644|香港|x2.0
-      - V4-3725|日本|x2.0
-      - V4-3726|日本|x2.0
-      - V4-3727|日本|x2.0
-      - V4-3728|日本|x1.0
+      - 🇺🇸USA086
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -91,23 +78,19 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰_香港🇭🇰2
       - 谷主分享_🦕
-      - 🇨🇳_台湾1
+      - 🇭🇰Hongkong077
+      - 🌟HK-iepl-super6
       - 🌟TW-iepl-super2
-      - 🇭🇰_香港🇭🇰1
+      - 🇨🇳_台湾1
+      - 🇹🇼Taiwan031
+      - 🇯🇵Japan029
+      - 🇯🇵Japan028
       - 🇭🇰_香港🇭🇰4
+      - 🇭🇰_香港🇭🇰1
       - 🇨🇳_台湾2
-      - 台湾01
+      - 🇺🇸USA025
       - 🌟US-iepl-super1
-      - V4-3639|香港|x1.0
-      - V4-3640|香港|x1.5
-      - V4-3641|香港|x2.0
-      - V4-3642|香港|x1.5
-      - V4-3643|香港|x2.0
-      - V4-3644|香港|x2.0
-      - V4-3725|日本|x2.0
-      - V4-3726|日本|x2.0
-      - V4-3727|日本|x2.0
-      - V4-3728|日本|x1.0
+      - 🇺🇸USA086
   - name: 📲 电报信息
     type: select
     proxies:
@@ -115,23 +98,19 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰_香港🇭🇰2
       - 谷主分享_🦕
-      - 🇨🇳_台湾1
+      - 🇭🇰Hongkong077
+      - 🌟HK-iepl-super6
       - 🌟TW-iepl-super2
-      - 🇭🇰_香港🇭🇰1
+      - 🇨🇳_台湾1
+      - 🇹🇼Taiwan031
+      - 🇯🇵Japan029
+      - 🇯🇵Japan028
       - 🇭🇰_香港🇭🇰4
+      - 🇭🇰_香港🇭🇰1
       - 🇨🇳_台湾2
-      - 台湾01
+      - 🇺🇸USA025
       - 🌟US-iepl-super1
-      - V4-3639|香港|x1.0
-      - V4-3640|香港|x1.5
-      - V4-3641|香港|x2.0
-      - V4-3642|香港|x1.5
-      - V4-3643|香港|x2.0
-      - V4-3644|香港|x2.0
-      - V4-3725|日本|x2.0
-      - V4-3726|日本|x2.0
-      - V4-3727|日本|x2.0
-      - V4-3728|日本|x1.0
+      - 🇺🇸USA086
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -139,23 +118,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🇭🇰_香港🇭🇰2
       - 谷主分享_🦕
-      - 🇨🇳_台湾1
+      - 🇭🇰Hongkong077
+      - 🌟HK-iepl-super6
       - 🌟TW-iepl-super2
-      - 🇭🇰_香港🇭🇰1
+      - 🇨🇳_台湾1
+      - 🇹🇼Taiwan031
+      - 🇯🇵Japan029
+      - 🇯🇵Japan028
       - 🇭🇰_香港🇭🇰4
+      - 🇭🇰_香港🇭🇰1
       - 🇨🇳_台湾2
-      - 台湾01
+      - 🇺🇸USA025
       - 🌟US-iepl-super1
-      - V4-3639|香港|x1.0
-      - V4-3640|香港|x1.5
-      - V4-3641|香港|x2.0
-      - V4-3642|香港|x1.5
-      - V4-3643|香港|x2.0
-      - V4-3644|香港|x2.0
-      - V4-3725|日本|x2.0
-      - V4-3726|日本|x2.0
-      - V4-3727|日本|x2.0
-      - V4-3728|日本|x1.0
+      - 🇺🇸USA086
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -163,23 +138,19 @@ proxy-groups:
       - 🎯 全球直连
       - 🇭🇰_香港🇭🇰2
       - 谷主分享_🦕
-      - 🇨🇳_台湾1
+      - 🇭🇰Hongkong077
+      - 🌟HK-iepl-super6
       - 🌟TW-iepl-super2
-      - 🇭🇰_香港🇭🇰1
+      - 🇨🇳_台湾1
+      - 🇹🇼Taiwan031
+      - 🇯🇵Japan029
+      - 🇯🇵Japan028
       - 🇭🇰_香港🇭🇰4
+      - 🇭🇰_香港🇭🇰1
       - 🇨🇳_台湾2
-      - 台湾01
+      - 🇺🇸USA025
       - 🌟US-iepl-super1
-      - V4-3639|香港|x1.0
-      - V4-3640|香港|x1.5
-      - V4-3641|香港|x2.0
-      - V4-3642|香港|x1.5
-      - V4-3643|香港|x2.0
-      - V4-3644|香港|x2.0
-      - V4-3725|日本|x2.0
-      - V4-3726|日本|x2.0
-      - V4-3727|日本|x2.0
-      - V4-3728|日本|x1.0
+      - 🇺🇸USA086
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -204,23 +175,19 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰_香港🇭🇰2
       - 谷主分享_🦕
-      - 🇨🇳_台湾1
+      - 🇭🇰Hongkong077
+      - 🌟HK-iepl-super6
       - 🌟TW-iepl-super2
-      - 🇭🇰_香港🇭🇰1
+      - 🇨🇳_台湾1
+      - 🇹🇼Taiwan031
+      - 🇯🇵Japan029
+      - 🇯🇵Japan028
       - 🇭🇰_香港🇭🇰4
+      - 🇭🇰_香港🇭🇰1
       - 🇨🇳_台湾2
-      - 台湾01
+      - 🇺🇸USA025
       - 🌟US-iepl-super1
-      - V4-3639|香港|x1.0
-      - V4-3640|香港|x1.5
-      - V4-3641|香港|x2.0
-      - V4-3642|香港|x1.5
-      - V4-3643|香港|x2.0
-      - V4-3644|香港|x2.0
-      - V4-3725|日本|x2.0
-      - V4-3726|日本|x2.0
-      - V4-3727|日本|x2.0
-      - V4-3728|日本|x1.0
+      - 🇺🇸USA086
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
