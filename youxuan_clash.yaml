@@ -13,20 +13,38 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vmess","name":"🇭🇰_香港🇭🇰2","server":"fvhod.downca.potatoeswater.com","port":"19313","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  
   - {"type":"vmess","name":"谷主分享_🦕","server":"clfab.downca.potatoeswater.com","port":"30569","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"🇭🇰Hongkong077","server":"console.02.aliyun.aq.kunlunaqs.com","port":45578,"cipher":"chacha20-ietf-poly1305","password":"7243745919d6de49a5db"}
   - {"type":"ss","name":"🌟HK-iepl-super6","server":"iepl1.forlive.live","port":50002,"cipher":"chacha20-ietf-poly1305","password":"a4ac2592-28e7-4927-94b3-277edae0869a"}
   - {"type":"ss","name":"🌟TW-iepl-super2","server":"iepl4.forlive.live","port":50003,"cipher":"chacha20-ietf-poly1305","password":"a4ac2592-28e7-4927-94b3-277edae0869a"}
-  - {"type":"vmess","name":"🇨🇳_台湾1","server":"fknae.downca.potatoeswater.com","port":"39260","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🌟US-iepl-super1","server":"iepl5.forlive.live","port":50118,"cipher":"chacha20-ietf-poly1305","password":"a4ac2592-28e7-4927-94b3-277edae0869a"}
+  - {"type":"ss","name":"🇭🇰Hongkong077","server":"console.02.aliyun.aq.kunlunaqs.com","port":45578,"cipher":"chacha20-ietf-poly1305","password":"7243745919d6de49a5db"}
+  - {"type":"vmess","name":"🇭🇰_香港🇭🇰1","server":"ukhtw.u92.dfnode.top","port":"19313","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇭🇰_香港🇭🇰2","server":"fvhod.downca.potatoeswater.com","port":"19313","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇭🇰_香港🇭🇰4","server":"wydpn.u92.dfnode.top","port":"19300","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - { name: '🇭🇰 香港 01丨1x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港 02丨1x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港 03丨1x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港家宽 01丨1x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 12729, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港家宽 02丨1x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 13105, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港家宽 03丨1x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 13115, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港家宽 04丨3x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 20033, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港家宽 05丨3x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 20034, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇭🇰 香港游戏丨2x HK', type: ss, server: v2jgyj9w.epicgames.ink, port: 12312, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇲🇴 澳门家宽 01丨5x MO', type: ss, server: v2jgyj9w.epicgames.ink, port: 19527, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇲🇴 澳门家宽 02丨5x MO', type: ss, server: v2jgyj9w.epicgames.ink, port: 20032, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
   - {"type":"ss","name":"🇹🇼Taiwan031","server":"console.03.aliyun.aq.kunlunaqs.com","port":45915,"cipher":"aes-128-gcm","password":"b74518fb49bd645e6ce7"}
+  - {"type":"vmess","name":"🇨🇳_台湾1","server":"fknae.downca.potatoeswater.com","port":"39260","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳_台湾2","server":"dywma.u92.dfnode.top","port":"39260","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
+  - { name: '🇹🇼 台湾 01丨1x TW', type: ss, server: v2jgyj9w.epicgames.ink, port: 12304, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇹🇼 台湾 02丨1x TW', type: ss, server: v2jgyj9w.epicgames.ink, port: 12305, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇹🇼 台湾 03丨1x TW', type: ss, server: v2jgyj9w.epicgames.ink, port: 12306, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇹🇼 台湾家宽 01丨3x TW', type: ss, server: v2jgyj9w.epicgames.ink, port: 20036, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇹🇼 台湾家宽 02丨3x TW', type: ss, server: v2jgyj9w.epicgames.ink, port: 20037, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
+  - { name: '🇹🇼 台湾家宽 03丨3x TW', type: ss, server: v2jgyj9w.epicgames.ink, port: 20038, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: e132313968c4.microsoft.com }, tfo: true, udp: true }
   - {"type":"ss","name":"🇯🇵Japan029","server":"console.02.aliyun.aq.kunlunaqs.com","port":45913,"cipher":"aes-128-gcm","password":"c8960ca4a0add435fc34"}
   - {"type":"ss","name":"🇯🇵Japan028","server":"console.02.aliyun.aq.kunlunaqs.com","port":45912,"cipher":"aes-128-gcm","password":"97998add7bf4fea885ef"}
-  - {"type":"vmess","name":"🇭🇰_香港🇭🇰4","server":"wydpn.u92.dfnode.top","port":"19300","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇭🇰_香港🇭🇰1","server":"ukhtw.u92.dfnode.top","port":"19313","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇨🇳_台湾2","server":"dywma.u92.dfnode.top","port":"39260","uuid":"d2318780-3476-3300-b30d-bce8f707e991","alterId":"0","cipher":"auto","network":"tcp"}
   - {"type":"ss","name":"🇺🇸USA025","server":"console.02.aliyun.aq.kunlunaqs.com","port":45908,"cipher":"aes-128-gcm","password":"97c3cf442df2d7099275"}
-  - {"type":"ss","name":"🌟US-iepl-super1","server":"iepl5.forlive.live","port":50118,"cipher":"chacha20-ietf-poly1305","password":"a4ac2592-28e7-4927-94b3-277edae0869a"}
   - {"type":"ss","name":"🇺🇸USA086","server":"console.02.aliyun.aq.kunlunaqs.com","port":45584,"cipher":"chacha20-ietf-poly1305","password":"4605c34b957ab8e1001b"}
 proxy-groups:
   - name: 🚀 节点选择
@@ -49,6 +67,23 @@ proxy-groups:
       - 🇺🇸USA025
       - 🌟US-iepl-super1
       - 🇺🇸USA086
+      - 🇭🇰 香港 01丨1x HK
+      - 🇭🇰 香港 02丨1x HK
+      - 🇭🇰 香港 03丨1x HK
+      - 🇭🇰 香港家宽 01丨1x HK
+      - 🇭🇰 香港家宽 02丨1x HK
+      - 🇭🇰 香港家宽 03丨1x HK
+      - 🇭🇰 香港家宽 04丨3x HK
+      - 🇭🇰 香港家宽 05丨3x HK
+      - 🇭🇰 香港游戏丨2x HK
+      - 🇲🇴 澳门家宽 01丨5x MO
+      - 🇲🇴 澳门家宽 02丨5x MO
+      - 🇹🇼 台湾 01丨1x TW
+      - 🇹🇼 台湾 02丨1x TW
+      - 🇹🇼 台湾 03丨1x TW
+      - 🇹🇼 台湾家宽 01丨3x TW
+      - 🇹🇼 台湾家宽 02丨3x TW
+      - 🇹🇼 台湾家宽 03丨3x TW
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -70,6 +105,23 @@ proxy-groups:
       - 🇺🇸USA025
       - 🌟US-iepl-super1
       - 🇺🇸USA086
+      - 🇭🇰 香港 01丨1x HK
+      - 🇭🇰 香港 02丨1x HK
+      - 🇭🇰 香港 03丨1x HK
+      - 🇭🇰 香港家宽 01丨1x HK
+      - 🇭🇰 香港家宽 02丨1x HK
+      - 🇭🇰 香港家宽 03丨1x HK
+      - 🇭🇰 香港家宽 04丨3x HK
+      - 🇭🇰 香港家宽 05丨3x HK
+      - 🇭🇰 香港游戏丨2x HK
+      - 🇲🇴 澳门家宽 01丨5x MO
+      - 🇲🇴 澳门家宽 02丨5x MO
+      - 🇹🇼 台湾 01丨1x TW
+      - 🇹🇼 台湾 02丨1x TW
+      - 🇹🇼 台湾 03丨1x TW
+      - 🇹🇼 台湾家宽 01丨3x TW
+      - 🇹🇼 台湾家宽 02丨3x TW
+      - 🇹🇼 台湾家宽 03丨3x TW
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -91,6 +143,23 @@ proxy-groups:
       - 🇺🇸USA025
       - 🌟US-iepl-super1
       - 🇺🇸USA086
+      - 🇭🇰 香港 01丨1x HK
+      - 🇭🇰 香港 02丨1x HK
+      - 🇭🇰 香港 03丨1x HK
+      - 🇭🇰 香港家宽 01丨1x HK
+      - 🇭🇰 香港家宽 02丨1x HK
+      - 🇭🇰 香港家宽 03丨1x HK
+      - 🇭🇰 香港家宽 04丨3x HK
+      - 🇭🇰 香港家宽 05丨3x HK
+      - 🇭🇰 香港游戏丨2x HK
+      - 🇲🇴 澳门家宽 01丨5x MO
+      - 🇲🇴 澳门家宽 02丨5x MO
+      - 🇹🇼 台湾 01丨1x TW
+      - 🇹🇼 台湾 02丨1x TW
+      - 🇹🇼 台湾 03丨1x TW
+      - 🇹🇼 台湾家宽 01丨3x TW
+      - 🇹🇼 台湾家宽 02丨3x TW
+      - 🇹🇼 台湾家宽 03丨3x TW
   - name: 📲 电报信息
     type: select
     proxies:
@@ -111,6 +180,23 @@ proxy-groups:
       - 🇺🇸USA025
       - 🌟US-iepl-super1
       - 🇺🇸USA086
+      - 🇭🇰 香港 01丨1x HK
+      - 🇭🇰 香港 02丨1x HK
+      - 🇭🇰 香港 03丨1x HK
+      - 🇭🇰 香港家宽 01丨1x HK
+      - 🇭🇰 香港家宽 02丨1x HK
+      - 🇭🇰 香港家宽 03丨1x HK
+      - 🇭🇰 香港家宽 04丨3x HK
+      - 🇭🇰 香港家宽 05丨3x HK
+      - 🇭🇰 香港游戏丨2x HK
+      - 🇲🇴 澳门家宽 01丨5x MO
+      - 🇲🇴 澳门家宽 02丨5x MO
+      - 🇹🇼 台湾 01丨1x TW
+      - 🇹🇼 台湾 02丨1x TW
+      - 🇹🇼 台湾 03丨1x TW
+      - 🇹🇼 台湾家宽 01丨3x TW
+      - 🇹🇼 台湾家宽 02丨3x TW
+      - 🇹🇼 台湾家宽 03丨3x TW
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -131,6 +217,23 @@ proxy-groups:
       - 🇺🇸USA025
       - 🌟US-iepl-super1
       - 🇺🇸USA086
+      - 🇭🇰 香港 01丨1x HK
+      - 🇭🇰 香港 02丨1x HK
+      - 🇭🇰 香港 03丨1x HK
+      - 🇭🇰 香港家宽 01丨1x HK
+      - 🇭🇰 香港家宽 02丨1x HK
+      - 🇭🇰 香港家宽 03丨1x HK
+      - 🇭🇰 香港家宽 04丨3x HK
+      - 🇭🇰 香港家宽 05丨3x HK
+      - 🇭🇰 香港游戏丨2x HK
+      - 🇲🇴 澳门家宽 01丨5x MO
+      - 🇲🇴 澳门家宽 02丨5x MO
+      - 🇹🇼 台湾 01丨1x TW
+      - 🇹🇼 台湾 02丨1x TW
+      - 🇹🇼 台湾 03丨1x TW
+      - 🇹🇼 台湾家宽 01丨3x TW
+      - 🇹🇼 台湾家宽 02丨3x TW
+      - 🇹🇼 台湾家宽 03丨3x TW
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -151,6 +254,23 @@ proxy-groups:
       - 🇺🇸USA025
       - 🌟US-iepl-super1
       - 🇺🇸USA086
+      - 🇭🇰 香港 01丨1x HK
+      - 🇭🇰 香港 02丨1x HK
+      - 🇭🇰 香港 03丨1x HK
+      - 🇭🇰 香港家宽 01丨1x HK
+      - 🇭🇰 香港家宽 02丨1x HK
+      - 🇭🇰 香港家宽 03丨1x HK
+      - 🇭🇰 香港家宽 04丨3x HK
+      - 🇭🇰 香港家宽 05丨3x HK
+      - 🇭🇰 香港游戏丨2x HK
+      - 🇲🇴 澳门家宽 01丨5x MO
+      - 🇲🇴 澳门家宽 02丨5x MO
+      - 🇹🇼 台湾 01丨1x TW
+      - 🇹🇼 台湾 02丨1x TW
+      - 🇹🇼 台湾 03丨1x TW
+      - 🇹🇼 台湾家宽 01丨3x TW
+      - 🇹🇼 台湾家宽 02丨3x TW
+      - 🇹🇼 台湾家宽 03丨3x TW
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,6 +308,23 @@ proxy-groups:
       - 🇺🇸USA025
       - 🌟US-iepl-super1
       - 🇺🇸USA086
+      - 🇭🇰 香港 01丨1x HK
+      - 🇭🇰 香港 02丨1x HK
+      - 🇭🇰 香港 03丨1x HK
+      - 🇭🇰 香港家宽 01丨1x HK
+      - 🇭🇰 香港家宽 02丨1x HK
+      - 🇭🇰 香港家宽 03丨1x HK
+      - 🇭🇰 香港家宽 04丨3x HK
+      - 🇭🇰 香港家宽 05丨3x HK
+      - 🇭🇰 香港游戏丨2x HK
+      - 🇲🇴 澳门家宽 01丨5x MO
+      - 🇲🇴 澳门家宽 02丨5x MO
+      - 🇹🇼 台湾 01丨1x TW
+      - 🇹🇼 台湾 02丨1x TW
+      - 🇹🇼 台湾 03丨1x TW
+      - 🇹🇼 台湾家宽 01丨3x TW
+      - 🇹🇼 台湾家宽 02丨3x TW
+      - 🇹🇼 台湾家宽 03丨3x TW
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
