@@ -1,0 +1,350 @@
+{
+    "wallpaper": "https://深色壁纸.xxooo.cf/",
+    "sites": [
+        {
+            "key": "js_近期热映",
+            "name": "近期热映",
+            "type": 3,
+            "searchable": 0,
+            "changeable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "api": "./js/lufei/recent_hits.js"
+        },
+        {
+            "key": "nodejs_wogg",
+            "name": "玩偶哥哥|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/wogg/3"
+        },
+        {
+            "key": "nodejs_labi",
+            "name": "蜡笔资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/labi/3"
+        },
+        {
+            "key": "nodejs_mogg",
+            "name": "木偶哥哥|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/mogg/3"
+        },
+        {
+            "key": "nodejs_mihdr",
+            "name": "至臻视觉|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/mihdr/3"
+        },
+        {
+            "key": "nodejs_share",
+            "name": "网盘分享|T4",
+            "type": 4,
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "filterable": 0,
+            "style": {
+                "type": "list"
+            },
+            "api": "http://211.149.154.162:8080/spider/share/3"
+        },
+        {
+            "key": "drpy_js_厂长资源",
+            "name": "厂长资源",
+            "type": 3,
+            "api": "./libs/drpy/drpy2.min.js",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 0,
+            "ext": "./js/drpy/影视/厂长资源.js"
+        },
+        {
+            "key": "drpy_js_哔嘀影视",
+            "name": "哔嘀影视",
+            "type": 3,
+            "api": "./libs/drpy/drpy2.min.js",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 0,
+            "ext": "./js/drpy/影视/哔嘀影视.js"
+        },
+        {
+            "key": "drpy_js_低端影视",
+            "name": "低端影视",
+            "type": 3,
+            "api": "./libs/drpy/drpy2.min.js",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "ext": "./js/drpy/影视/低端影视.js"
+        },
+        {
+            "key": "hipy_4K剧院",
+            "name": "高质剧院",
+            "type": 3,
+            "api": "./libs/drpy/drpy2.min.js",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "order_num": 0,
+            "ext": "./js/drpy/影视/4K剧院.js"
+        },
+        {
+            "key": "nodejs_iqiyi",
+            "name": "奇艺视频|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/iqiyi/3"
+        },
+        {
+            "key": "nodejs_youku",
+            "name": "优酷视频|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/youku/3"
+        },
+        {
+            "key": "nodejs_qq",
+            "name": "腾讯视频|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/qq/3"
+        },
+        {
+            "key": "nodejs_mgtv",
+            "name": "芒果视频|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/mgtv/3"
+        },
+        {
+            "key": "nodejs_bilibili",
+            "name": "哔哩哔哩|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "ext": "mpd",
+            "api": "http://211.149.154.162:8080/spider/bilibili/3"
+        },
+        {
+            "key": "nodejs_kan360",
+            "name": "三路零源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/kan360/3"
+        },
+        {
+            "key": "nodejs_libo",
+            "name": "立播资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/libo/3"
+        },
+        {
+            "key": "nodejs_nmys",
+            "name": "农民影视|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/nmys/3"
+        },
+        {
+            "key": "nodejs_zxzj",
+            "name": "在线之家|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/zxzj/3"
+        },
+        {
+            "key": "nodejs_funletu",
+            "name": "趣盘资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/funletu/3"
+        },
+        {
+            "key": "nodejs_star2",
+            "name": "星剧社源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/star2/3"
+        },
+        {
+            "key": "nodejs_yingso",
+            "name": "影搜资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/yingso/3"
+        },
+        {
+            "key": "nodejs_iptv",
+            "name": "直播转点|T4",
+            "type": 4,
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "filterable": 0,
+            "api": "http://211.149.154.162:8080/spider/iptv/3"
+        },
+        {
+            "key": "nodejs_guaguale115",
+            "name": "TG|115影视资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/guaguale115/3"
+        },
+        {
+            "key": "nodejs_PikPakShareChannel",
+            "name": "TG|PikPak云盘资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/PikPakShareChannel/3"
+        },
+        {
+            "key": "nodejs_Alicloud_ali",
+            "name": "TG|阿里云盘资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/Alicloud_ali/3"
+        },
+        {
+            "key": "nodejs_aliyun4kdy",
+            "name": "TG|阿里4k高清|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/aliyun4kdy/3"
+        },
+        {
+            "key": "nodejs_yunpanpan",
+            "name": "TG|云盘盘|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/yunpanpan/3"
+        },
+        {
+            "key": "nodejs_yunpanshare",
+            "name": "TG|夸克网盘资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/yunpanshare/3"
+        },
+        {
+            "key": "nodejs_alyp_4K_Movies",
+            "name": "TG|网盘资源(电影)|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/alyp_4K_Movies/3"
+        },
+        {
+            "key": "nodejs_alyp_TV",
+            "name": "TG|网盘资源(电视剧)|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/alyp_TV/3"
+        },
+        {
+            "key": "nodejs_Lossless_Yinyue",
+            "name": "TG|网盘资源(音乐)|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/Lossless_Yinyue/3"
+        },
+        {
+            "key": "nodejs_alyp_Animation",
+            "name": "TG|网盘资源(动漫)|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/alyp_Animation/3"
+        },
+        {
+            "key": "nodejs_Quark_Movies",
+            "name": "TG|夸克综合资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/Quark_Movies/3"
+        },
+        {
+            "key": "nodejs_WFYSFX02",
+            "name": "TG|全球影视分享|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/WFYSFX02/3"
+        },
+        {
+            "key": "push_agent",
+            "name": "推送",
+            "type": 4,
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "filterable": 0,
+            "api": "http://211.149.154.162:8080/spider/push/4"
+        }
+    ],
+    "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
+    "lives": [
+        {
+            "name": "IPTV",
+            "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+            "playerType": 1
+        }
+    ]
+}
