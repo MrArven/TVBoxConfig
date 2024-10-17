@@ -3,7 +3,7 @@
     "sites": [
         {
             "key": "js_近期热映",
-            "name": "近期热映",
+            "name": "近期热映|js",
             "type": 3,
             "searchable": 0,
             "changeable": 0,
@@ -62,7 +62,7 @@
         },
         {
             "key": "drpy_js_厂长资源",
-            "name": "厂长资源",
+            "name": "厂长资源|js",
             "type": 3,
             "api": "./libs/drpy/drpy2.min.js",
             "searchable": 0,
@@ -72,7 +72,7 @@
         },
         {
             "key": "drpy_js_哔嘀影视",
-            "name": "哔嘀影视",
+            "name": "哔嘀影视|js",
             "type": 3,
             "api": "./libs/drpy/drpy2.min.js",
             "searchable": 0,
@@ -82,7 +82,7 @@
         },
         {
             "key": "drpy_js_低端影视",
-            "name": "低端影视",
+            "name": "低端影视|js",
             "type": 3,
             "api": "./libs/drpy/drpy2.min.js",
             "searchable": 1,
@@ -92,7 +92,7 @@
         },
         {
             "key": "hipy_4K剧院",
-            "name": "高质剧院",
+            "name": "高质剧院|js",
             "type": 3,
             "api": "./libs/drpy/drpy2.min.js",
             "searchable": 1,
@@ -222,7 +222,7 @@
         },
         {
             "key": "nodejs_guaguale115",
-            "name": "TG|115影视资源|T4",
+            "name": "TG-T4|guaguale115",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -230,17 +230,44 @@
             "api": "http://211.149.154.162:8080/spider/guaguale115/3"
         },
         {
-            "key": "nodejs_PikPakShareChannel",
-            "name": "TG|PikPak云盘资源|T4",
+            "key": "nodejs_oneonefivewpfx",
+            "name": "TG-T4|115网盘资源收藏",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0,
-            "api": "http://211.149.154.162:8080/spider/PikPakShareChannel/3"
+            "api": "http://211.149.154.162:8080/spider/oneonefivewpfx/3"
+        },
+        {
+            "key": "nodejs_hao115",
+            "name": "TG-T4|15网盘资源分享频道",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/hao115/3"
+        },
+        {
+            "key": "nodejs_dianyingshare",
+            "name": "TG-T4|动漫ღ漫画",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/dianyingshare/3"
+        },
+        {
+            "key": "nodejs_kuakeyun",
+            "name": "TG-T4|夸克云盘盘",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/kuakeyun/3"
         },
         {
             "key": "nodejs_Alicloud_ali",
-            "name": "TG|阿里云盘资源|T4",
+            "name": "TG-T4|Alicloud_ali",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -249,7 +276,7 @@
         },
         {
             "key": "nodejs_aliyun4kdy",
-            "name": "TG|阿里4k高清|T4",
+            "name": "TG-T4|aliyun4kdy",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -258,7 +285,7 @@
         },
         {
             "key": "nodejs_yunpanpan",
-            "name": "TG|云盘盘|T4",
+            "name": "TG-T4|yunpanpan",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -267,7 +294,7 @@
         },
         {
             "key": "nodejs_yunpanshare",
-            "name": "TG|夸克网盘资源|T4",
+            "name": "TG-T4|yunpanshare",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
