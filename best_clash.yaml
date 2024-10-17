@@ -1,0 +1,66 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: true
+    default-nameserver: [223.5.5.5, 223.6.6.6]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://dns.alidns.com/dns-query']
+    fallback: ['https://dns.alidns.com/dns-query', 'https://dns.cloudflare.com/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
+    
+proxies: 
+  - {name: HK-iepl-super, server: iepl1.forlive.live, port: 50002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
+  - {name: TW-iepl-super, server: iepl4.forlive.live, port: 50003, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
+  - {name: US-iepl-super, server: iepl1.forlive.live, port: 50118, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
+  - {name: FlyintPro, server: console.02.aliyun.aq.kunlunaqs.com, port: 45936, type: ss, cipher: aes-128-gcm, password: a643f6f3733c9962851d, plugin: obfs, plugin-opts: {mode: http, host: c1dff73c49a47e1fddb9.microsoft.com}}
+  - {name: HK广东移动隧道, server: tunnel-07312159.520300.xyz, port: 15248, type: ss, cipher: aes-256-gcm, password: JSbRiaUa8P}
+  - {name: VN江苏移动中转, server: tunnel-08301515.520300.xyz, port: 11906, type: ss, cipher: aes-256-gcm, password: xBqB9DPmcJ}
+  - {name: TW-2114-data, server: 211.72.214.20, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: "\n(tg.myFreeNodeChat) 01e4b4c:14399"}}
+  - {name: TW-6060-data, server: 60.249.28.60, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (tg.myFreeNodeChat) 01e4b4c:14399}}
+  - {name: JP-hy2-adfree, type: hysteria2, server: 141.98.196.4, port: 443, password: qazmlp0525., fast-open: true, sni: jp.tuic.cc, skip-cert-verify: true}
+  - {name: HK免流aws, server: ef4e4860-008c-3e01-d1f8-bd56dc5b419b.oneplus.pub, port: 80, client-fingerprint: chrome, type: vmess, uuid: 4644ac1b-8de0-4bb3-808e-49ca2301092f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a189.com}}}
+  - {name: US美国it7①, server: c23s1.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: nRNYoMW5ga}
+  - {name: US美国it7②, server: c23s2.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: nRNYoMW5ga}
+  - {name: US美国it7③, server: c23s3.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US美国it7④, server: c23s801.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: JP日本it7①, server: c23s4.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: NL荷兰it7①, server: c23s5.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US-ori-5424-aws, server: 54.68.160.24, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: US-ori-35248-aws, server: 35.87.185.248, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  
+proxy-providers: {WARP: {type: http, path: ./warp.yaml, url: 'https://neko-warp.nloli.xyz/neko_warp.yaml', interval: 3600, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}}}
+  
+proxy-groups:
+    - { name: PROXY, type: select, proxies: [HK-iepl-super, TW-iepl-super, US-iepl-super, FlyintPro, HK广东移动隧道, VN江苏移动中转, TW-6060-data, TW-2114-data, JP-hy2-adfree, HK免流aws, US美国it7①, US美国it7②, US美国it7③, US美国it7④, JP日本it7①, NL荷兰it7①,  US-ori-5424-aws, US-ori-35248-aws]}
+rule-providers:
+    reject: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt', path: ./ruleset/reject.yaml, interval: 86400 }
+    icloud: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt', path: ./ruleset/icloud.yaml, interval: 86400 }
+    apple: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt', path: ./ruleset/apple.yaml, interval: 86400 }
+    proxy: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt', path: ./ruleset/proxy.yaml, interval: 86400 }
+    direct: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt', path: ./ruleset/direct.yaml, interval: 86400 }
+    private: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt', path: ./ruleset/private.yaml, interval: 86400 }
+    telegramcidr: { type: http, behavior: ipcidr, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt', path: ./ruleset/telegramcidr.yaml, interval: 86400 }
+    cncidr: { type: http, behavior: ipcidr, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt', path: ./ruleset/cncidr.yaml, interval: 86400 }
+    lancidr: { type: http, behavior: ipcidr, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt', path: ./ruleset/lancidr.yaml, interval: 86400 }
+    applications: { type: http, behavior: classical, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt', path: ./ruleset/applications.yaml, interval: 86400 }
+rules:
+    - 'RULE-SET,applications,DIRECT'
+    - 'RULE-SET,private,DIRECT'
+    - 'RULE-SET,reject,REJECT'
+    - 'RULE-SET,icloud,DIRECT'
+    - 'RULE-SET,apple,DIRECT'
+    - 'RULE-SET,proxy,PROXY'
+    - 'RULE-SET,direct,DIRECT'
+    - 'RULE-SET,lancidr,DIRECT'
+    - 'RULE-SET,cncidr,DIRECT'
+    - 'RULE-SET,telegramcidr,PROXY'
+    - 'GEOIP,LAN,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,PROXY'
