@@ -374,13 +374,13 @@
             "api": "http://211.149.154.162:8080/spider/Quark_Movies/3"
         },
         {
-            "key": "nodejs_WFYSFX02",
-            "name": "TG|全球影视分享|T4",
+            "key": "nodejs_XiangxiuNB",
+            "name": "TG|香秀网盘资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0,
-            "api": "http://211.149.154.162:8080/spider/WFYSFX02/3"
+            "api": "http://211.149.154.162:8080/spider/XiangxiuNB/3"
         },
         {
             "key": "nodejs_xunleibl",
