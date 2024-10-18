@@ -2,8 +2,8 @@
     "wallpaper": "https://深色壁纸.xxooo.cf/",
     "sites": [
         {
-            "key": "js_近期热映",
-            "name": "近期热映|JS",
+            "key": "js_recent_hits_of_lufei",
+            "name": "近期热映|Lk",
             "type": 3,
             "searchable": 0,
             "changeable": 0,
@@ -221,26 +221,8 @@
             "api": "http://211.149.154.162:8080/spider/iptv/3"
         },
         {
-            "key": "nodejs_hao115",
-            "name": "TG|妖武网盘|T4①",
-            "type": 4,
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "api": "http://211.149.154.162:8080/spider/hao115/3"
-        },
-        {
-            "key": "nodejs_oneonefivewpfx",
-            "name": "TG|妖武资源|T4②",
-            "type": 4,
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "api": "http://211.149.154.162:8080/spider/oneonefivewpfx/3"
-        },
-        {
             "key": "nodejs_guaguale115",
-            "name": "TG|妖武网盘|T4③",
+            "name": "TG|115刮刮乐源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -248,8 +230,35 @@
             "api": "http://211.149.154.162:8080/spider/guaguale115/3"
         },
         {
+            "key": "nodejs_oneonefivewpfx",
+            "name": "TG|115网盘收藏|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/oneonefivewpfx/3"
+        },
+        {
+            "key": "nodejs_hao115",
+            "name": "TG|115网盘好源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/hao115/3"
+        },
+        {
+            "key": "nodejs_shareAliyun",
+            "name": "TG|分享阿里资源|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/shareAliyun/3"
+        },
+        {
             "key": "nodejs_dianyingshare",
-            "name": "TG|阿里动漫|T4",
+            "name": "TG|阿里电影分享|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -257,8 +266,17 @@
             "api": "http://211.149.154.162:8080/spider/dianyingshare/3"
         },
         {
+            "key": "nodejs_qixingzhenren",
+            "name": "TG|阿里资源发布|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/qixingzhenren/3"
+        },
+        {
             "key": "nodejs_kuakeyun",
-            "name": "TG|夸克云盘|T4",
+            "name": "TG|夸克云盘资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -266,8 +284,26 @@
             "api": "http://211.149.154.162:8080/spider/kuakeyun/3"
         },
         {
+            "key": "nodejs_Quark_Share_Channel",
+            "name": "TG|夸克分享频道|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/Quark_Share_Channel/3"
+        },
+        {
+            "key": "nodejs_yunpanshare",
+            "name": "TG|夸克云盘分享|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/yunpanshare/3"
+        },
+        {
             "key": "nodejs_Alicloud_ali",
-            "name": "TG|阿里网盘|T4",
+            "name": "TG|阿里云盘资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -276,7 +312,7 @@
         },
         {
             "key": "nodejs_aliyun4kdy",
-            "name": "TG|阿里高清|T4",
+            "name": "TG|阿里高清资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -285,7 +321,7 @@
         },
         {
             "key": "nodejs_yunpanpan",
-            "name": "TG|阿里云盘|T4",
+            "name": "TG|云盘盘资源集|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -293,17 +329,8 @@
             "api": "http://211.149.154.162:8080/spider/yunpanpan/3"
         },
         {
-            "key": "nodejs_yunpanshare",
-            "name": "TG|阿里分享|T4",
-            "type": 4,
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "api": "http://211.149.154.162:8080/spider/yunpanshare/3"
-        },
-        {
             "key": "nodejs_alyp_4K_Movies",
-            "name": "TG|网盘资源|T4",
+            "name": "TG|网盘电影资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -312,7 +339,7 @@
         },
         {
             "key": "nodejs_alyp_TV",
-            "name": "TG|网盘视剧|T4",
+            "name": "TG|网盘视剧资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -321,7 +348,7 @@
         },
         {
             "key": "nodejs_Lossless_Yinyue",
-            "name": "TG|网盘音乐|T4",
+            "name": "TG|网盘音乐资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -330,7 +357,7 @@
         },
         {
             "key": "nodejs_alyp_Animation",
-            "name": "TG|网盘动漫|T4",
+            "name": "TG|网盘动漫资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -339,7 +366,7 @@
         },
         {
             "key": "nodejs_Quark_Movies",
-            "name": "TG|夸克综合|T4",
+            "name": "TG|夸克综合资源|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
@@ -348,12 +375,21 @@
         },
         {
             "key": "nodejs_WFYSFX02",
-            "name": "TG|全球影视|T4",
+            "name": "TG|全球影视分享|T4",
             "type": 4,
             "searchable": 1,
             "quickSearch": 1,
             "changeable": 0,
             "api": "http://211.149.154.162:8080/spider/WFYSFX02/3"
+        },
+        {
+            "key": "nodejs_xunleibl",
+            "name": "TG|迅雷云盘发布|T4",
+            "type": 4,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "api": "http://211.149.154.162:8080/spider/xunleibl/3"
         },
         {
             "key": "push_agent",
