@@ -16,6 +16,12 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
     
 proxies: 
+  - {type:"ss",name:"🇭🇰Hongkong077",server:"console.02.aliyun.aq.kunlunaqs.com",port:45578,cipher:"chacha20-ietf-poly1305",password:"7243745919d6de49a5db"}
+  - {type:"ss",name:"🇯🇵Japan029",server:"console.02.aliyun.aq.kunlunaqs.com",port:45913,cipher:"aes-128-gcm",password:"c8960ca4a0add435fc34"}
+  - {type:"ss",name:"🇯🇵Japan028",server:"console.02.aliyun.aq.kunlunaqs.com",port:45912,cipher:"aes-128-gcm",password:"97998add7bf4fea885ef"}
+  - {type:"vmess",name:"🇭🇰_香港🇭🇰2",server:"fvhod.downca.potatoeswater.com",port:19313,uuid:"d2318780-3476-3300-b30d-bce8f707e991",alterId:"0",cipher:"auto",network:"tcp"}
+  - {type:"vmess",name:"🇨🇳_台湾1",server:"fknae.downca.potatoeswater.com",port:39260,uuid:"d2318780-3476-3300-b30d-bce8f707e991",alterId:"0",cipher:"auto",network:"tcp"}
+  - {name: HK-Hongkong-077, server: iepl1.forlive.live, port: 50002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
   - {name: HK-iepl-super, server: iepl1.forlive.live, port: 50002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
   - {name: TW-iepl-super, server: iepl4.forlive.live, port: 50003, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
   - {name: US-iepl-super, server: iepl1.forlive.live, port: 50118, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
