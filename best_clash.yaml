@@ -16,12 +16,7 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
     
 proxies: 
-  - {type:ss,name:Hongkong077,server:console.02.aliyun.aq.kunlunaqs.com,port:45578,cipher:chacha20-ietf-poly1305,password:7243745919d6de49a5db}
-  - {type:ss,name:Japan029,server:console.02.aliyun.aq.kunlunaqs.com,port:45913,cipher:aes-128-gcm,password:c8960ca4a0add435fc34}
-  - {type:ss,name:Japan028,server:console.02.aliyun.aq.kunlunaqs.com,port:45912,cipher:aes-128-gcm,password:97998add7bf4fea885ef}
-  - {type:vmess,name:香港2,server:fvhod.downca.potatoeswater.com,port:19313,uuid:d2318780-3476-3300-b30d-bce8f707e991,alterId:0,cipher:auto,network:tcp}
-  - {type:vmess,name:台湾1,server:fknae.downca.potatoeswater.com,port:39260,uuid:d2318780-3476-3300-b30d-bce8f707e991,alterId:0,cipher:auto,network:tcp}
-  - {name: HK-Hongkong-077, server: iepl1.forlive.live, port: 50002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
+  - {name: HK-Hongkong-077, server: console.02.aliyun.aq.kunlunaqs.com, port: 45578, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 7243745919d6de49a5db}
   - {name: HK-iepl-super, server: iepl1.forlive.live, port: 50002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
   - {name: TW-iepl-super, server: iepl4.forlive.live, port: 50003, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
   - {name: US-iepl-super, server: iepl1.forlive.live, port: 50118, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
@@ -44,7 +39,7 @@ proxies:
 proxy-providers: {WARP: {type: http, path: ./warp.yaml, url: 'https://neko-warp.nloli.xyz/neko_warp.yaml', interval: 3600, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}}}
   
 proxy-groups:
-    - { name: PROXY, type: select, proxies: [Hongkong077,Japan029,Japan028,香港2,台湾1,HK-iepl-super, TW-iepl-super, US-iepl-super, FlyintPro, HK广东移动隧道, VN江苏移动中转, TW-6060-data, TW-2114-data, JP-hy2-adfree, HK免流aws, US美国it7①, US美国it7②, US美国it7③, US美国it7④, JP日本it7①, NL荷兰it7①,  US-ori-5424-aws, US-ori-35248-aws]}
+    - { name: PROXY, type: select, proxies: [Hongkong077,HK-iepl-super, TW-iepl-super, US-iepl-super, FlyintPro, HK广东移动隧道, VN江苏移动中转, TW-6060-data, TW-2114-data, JP-hy2-adfree, HK免流aws, US美国it7①, US美国it7②, US美国it7③, US美国it7④, JP日本it7①, NL荷兰it7①,  US-ori-5424-aws, US-ori-35248-aws]}
 rule-providers:
     reject: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt', path: ./ruleset/reject.yaml, interval: 86400 }
     icloud: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt', path: ./ruleset/icloud.yaml, interval: 86400 }
