@@ -16,30 +16,32 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
     
 proxies: 
-  - {name: HK-Hongkong-077, server: console.02.aliyun.aq.kunlunaqs.com, port: 45578, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 7243745919d6de49a5db}
-  - {name: HK-iepl-super, server: iepl1.forlive.live, port: 50002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
   - {name: TW-iepl-super, server: iepl4.forlive.live, port: 50003, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
+  - {name: HK-iepl-super, server: iepl1.forlive.live, port: 50002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
   - {name: US-iepl-super, server: iepl1.forlive.live, port: 50118, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: a4ac2592-28e7-4927-94b3-277edae0869a}
-  - {name: FlyintPro, server: console.02.aliyun.aq.kunlunaqs.com, port: 45936, type: ss, cipher: aes-128-gcm, password: a643f6f3733c9962851d, plugin: obfs, plugin-opts: {mode: http, host: c1dff73c49a47e1fddb9.microsoft.com}}
-  - {name: HK广东移动隧道, server: tunnel-07312159.520300.xyz, port: 15248, type: ss, cipher: aes-256-gcm, password: JSbRiaUa8P}
-  - {name: VN江苏移动中转, server: tunnel-08301515.520300.xyz, port: 11906, type: ss, cipher: aes-256-gcm, password: xBqB9DPmcJ}
-  - {name: TW-2114-data, server: 211.72.214.20, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: "\n(tg.myFreeNodeChat) 01e4b4c:14399"}}
-  - {name: TW-6060-data, server: 60.249.28.60, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (tg.myFreeNodeChat) 01e4b4c:14399}}
+  - {name: JP日本it7①, server: c23s4.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: JP-hy2-adfree, type: hysteria2, server: 141.98.196.4, port: 443, password: qazmlp0525., fast-open: true, sni: jp.tuic.cc, skip-cert-verify: true}
-  - {name: HK免流aws, server: ef4e4860-008c-3e01-d1f8-bd56dc5b419b.oneplus.pub, port: 80, client-fingerprint: chrome, type: vmess, uuid: 4644ac1b-8de0-4bb3-808e-49ca2301092f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a189.com}}}
+  - {name: BT-JP3, server: rk2.boost1.top, port: 40033, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
   - {name: US美国it7①, server: c23s1.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: nRNYoMW5ga}
   - {name: US美国it7②, server: c23s2.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: nRNYoMW5ga}
   - {name: US美国it7③, server: c23s3.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: US美国it7④, server: c23s801.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: JP日本it7①, server: c23s4.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: NL荷兰it7①, server: c23s5.portablesubmarines.com, port: 11018, client-fingerprint: chrome, type: vmess, uuid: fe0179a5-b6e2-4911-85f9-3446ac774f3e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US-ori-5424-aws, server: 54.68.160.24, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: BT-HK6, server: rk1.boost1.top, port: 40006, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
+  - {name: JP-120114, server: 120.232.217.114, port: 25841, client-fingerprint: chrome, type: vmess, uuid: d69c0483-dd85-336a-9889-abb78e4e068f, alterId: 0, cipher: auto, tls: false}
+  - {name: HK|武港①, server: 183.94.30.165, port: 27846, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: sRTogQzdN0LAiiKKpgqgrc36AFgLKocI0j0jlXTSwJaz}
+  - {name: BT-SG2, server: rk1.boost1.top, port: 40012, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
+  - {name: BT-SG3, server: rk1.boost1.top, port: 40013, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
+  - {name: BT-SG7, server: rk1.boost1.top, port: 40017, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
+  - {name: BT-US3, server: rk2.boost1.top, port: 40043, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
+  - {name: BT-US2, server: rk2.boost1.top, port: 40042, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
+  - {name: BT-US4, server: rk2.boost1.top, port: 40044, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: ddc43032-ee81-412a-ac28-53213824b6b7}
   - {name: US-ori-35248-aws, server: 35.87.185.248, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  
+  - {name: US-ori-5424-aws, server: 54.68.160.24, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+
 proxy-providers: {WARP: {type: http, path: ./warp.yaml, url: 'https://neko-warp.nloli.xyz/neko_warp.yaml', interval: 3600, health-check: {enable: true, url: 'https://www.gstatic.com/generate_204', interval: 300}}}
   
 proxy-groups:
-    - { name: PROXY, type: select, proxies: [Hongkong077,HK-iepl-super, TW-iepl-super, US-iepl-super, FlyintPro, HK广东移动隧道, VN江苏移动中转, TW-6060-data, TW-2114-data, JP-hy2-adfree, HK免流aws, US美国it7①, US美国it7②, US美国it7③, US美国it7④, JP日本it7①, NL荷兰it7①,  US-ori-5424-aws, US-ori-35248-aws]}
+    - { name: PROXY, type: select, proxies: [TW-iepl-super, HK-iepl-super, US-iepl-super, JP日本it7①, JP-hy2-adfree, US美国it7①, US美国it7②, US美国it7③, US美国it7④, BT-HK6, JP-120114, HK|武港①, BT-JP3, BT-SG2, BT-SG3, BT-SG7, BT-US3, BT-US2, BT-US4, US-ori-5424-aws, US-ori-35248-aws]}
 rule-providers:
     reject: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt', path: ./ruleset/reject.yaml, interval: 86400 }
     icloud: { type: http, behavior: domain, url: 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt', path: ./ruleset/icloud.yaml, interval: 86400 }
