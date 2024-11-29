@@ -1,5 +1,5 @@
 {
-    "spider": "./jars/t4.jar",
+    "spider": "http://211.149.154.162:8080/custom_spider.jar?token=justDoIt%242024;md5;cc3b3d2ddf389338b62eccd4a938b610",
     "wallpaper": "https://深色壁纸.xxooo.cf/",
     "logo": "./config/logo/奔跑的小黑兔.gif",
     "sites": [
