@@ -6,3 +6,5 @@ TVBox自用资源
 https://ghp.ci/https://raw.githubusercontent.com/MrArven/TVBoxConfig/refs/heads/main/jk.yaml
 
 https://ghp.ci/https://raw.githubusercontent.com/MrArven/TVBoxConfig/refs/heads/main/youxuan_clash.yaml
+
+https://ghp.ci/https://raw.githubusercontent.com/MrArven/TVBoxConfig/refs/heads/main/api.json
