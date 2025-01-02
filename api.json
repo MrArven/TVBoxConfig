@@ -14,7 +14,7 @@
             "filterable": 0,
             "indexs": 1,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -48,63 +48,56 @@
             "ext": "./js/drpy/影视/低端影视.js"
         },
         {
-            "key": "nodejs_iqiyi_奇异视频",
-            "name": "奇异视频",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/iqiyi",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
-            }
+            "key": "dm_drpy_腾讯弹幕",
+            "name": "腾讯弹幕",
+            "type": 3,
+            "api": "https://gitee.com/PizazzXS/four-d/raw/master/js/drpy2.min.js",
+            "ext": "https://gitee.com/PizazzXS/four-d/raw/master/movie/js/TXDM.js"
         },
         {
-            "key": "nodejs_qq_腾讯视频",
-            "name": "腾讯视频",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/qq",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
-            }
+            "key": "dm_drpy_优酷弹幕",
+            "name": "优酷弹幕",
+            "type": 3,
+            "api": "https://gitee.com/PizazzXS/four-d/raw/master/js/drpy2.min.js",
+            "ext": "https://gitee.com/PizazzXS/four-d/raw/master/movie/js/YKDM.js"
         },
         {
-            "key": "nodejs_mgtv_芒果视频",
-            "name": "芒果视频",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/mgtv",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
-            }
+            "key": "dm_drpy_芒果弹幕",
+            "name": "芒果弹幕",
+            "type": 3,
+            "api": "https://gitee.com/PizazzXS/four-d/raw/master/js/drpy2.min.js",
+            "ext": "https://gitee.com/PizazzXS/four-d/raw/master/movie/js/MGDM.js"
         },
         {
-            "key": "nodejs_youku_优酷视频",
-            "name": "优酷视频",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/youku",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
-            }
+            "key": "dm_drpy_爱奇艺弹幕",
+            "name": "奇艺弹幕",
+            "type": 3,
+            "api": "https://gitee.com/PizazzXS/four-d/raw/master/js/drpy2.min.js",
+            "ext": "https://gitee.com/PizazzXS/four-d/raw/master/movie/js/AQYDM.js"
         },
         {
-            "key": "nodejs_bilibili_哔哩哔哩",
-            "name": "哔哩哔哩",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/bilibili",
+            "key": "dm_csp_AppYsV2_皮皮虾",
+            "name": "皮皮资源",
+            "type": 3,
+            "api": "csp_AppYsV2",
             "searchable": 1,
             "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
+            "filterable": 1,
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
+            "ext": "http://38.55.250.149:1314/api.php/app/"
+        },
+        {
+            "key": "csp_TianTian_浪酷弹幕",
+            "name": "浪酷弹幕",
+            "type": 3,
+            "api": "csp_TianTian",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
+            "ext": {
+                "danmu": true,
+                "site": "aHR0cDovL3YubGt1eXMuY24="
             }
         },
         {
@@ -116,7 +109,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -128,7 +121,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -140,35 +133,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
-            }
-        },
-        {
-            "key": "nodejs_nmys_农民影视",
-            "name": "农民影视",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/nmys",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
-            }
-        },
-        {
-            "key": "nodejs_share_网盘分享",
-            "name": "网盘合集",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/share",
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "filterable": 0,
-            "style": {
-                "type": "list"
-            },
-            "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -179,7 +144,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jars/dm.jar",
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
             "ext": {
                 "danmu": false
             }
@@ -192,7 +157,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jars/dm.jar",
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
             "ext": {
                 "danmu": false
             }
@@ -205,7 +170,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jars/dm.jar"
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt"
         },
         {
             "key": "dm_csp_Ikanbot_机器人弹幕",
@@ -215,7 +180,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jars/dm.jar",
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
             "ext": {
                 "danmu": false
             }
@@ -250,7 +215,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "jar": "./jars/dm.jar",
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
             "ext": {
                 "token": "./key/ali.txt",
                 "cookie": "./key/quark.txt",
@@ -268,7 +233,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -280,7 +245,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -292,7 +257,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -304,7 +269,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -316,7 +281,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -328,19 +293,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
-            }
-        },
-        {
-            "key": "nodejs_liuqu_六趣网盘",
-            "name": "六趣网盘",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/liuqu",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -351,7 +304,7 @@
             "searchable": 1,
             "filterable": 0,
             "changeable": 1,
-            "jar": "./jars/dm.jar",
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
             "ext": {
                 "token": "./key/ali.txt",
                 "danmu": false
@@ -365,7 +318,7 @@
             "searchable": 1,
             "filterable": 1,
             "changeable": 0,
-            "jar": "./jars/dm.jar",
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
             "ext": {
                 "cookie": "./key/quark.txt",
                 "site": "https://www.misou.fun",
@@ -381,23 +334,10 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "jar": "./jars/dm.jar",
+            "jar": "https://gitee.com/PizazzXS/four-d/raw/master/spider.txt",
             "ext": {
                 "cookie": "./key/quark.txt",
                 "danmu": false
-            }
-        },
-        {
-            "key": "nodejs_iptv6_直播",
-            "name": "在线直播",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/iptv",
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "filterable": 0,
-            "header": {
-                "token": "justDoIt$2024"
             }
         },
         {
@@ -409,7 +349,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -421,7 +361,31 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
+            }
+        },
+        {
+            "key": "ucpanpan",
+            "name": "TG-幼熙①",
+            "type": 4,
+            "api": "http://211.149.154.162:8080/video/ucpanpan",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "header": {
+                "token": "justDoIt_2024"
+            }
+        },
+        {
+            "key": "ucquark",
+            "name": "TG-幼熙②",
+            "type": 4,
+            "api": "http://211.149.154.162:8080/video/ucquark",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 0,
+            "header": {
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -433,7 +397,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -445,7 +409,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -457,7 +421,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -469,7 +433,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -481,7 +445,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -493,7 +457,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -505,7 +469,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -517,7 +481,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -529,7 +493,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -541,7 +505,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -553,7 +517,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -565,7 +529,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -577,7 +541,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -589,7 +553,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -601,7 +565,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -613,7 +577,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -625,7 +589,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -637,19 +601,7 @@
             "quickSearch": 1,
             "changeable": 0,
             "header": {
-                "token": "justDoIt$2024"
-            }
-        },
-        {
-            "key": "xunleibl",
-            "name": "TG-迅雷①",
-            "type": 4,
-            "api": "http://211.149.154.162:8080/video/xunleibl",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 0,
-            "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         },
         {
@@ -673,7 +625,7 @@
             "changeable": 0,
             "filterable": 0,
             "header": {
-                "token": "justDoIt$2024"
+                "token": "justDoIt_2024"
             }
         }
     ],
@@ -684,9 +636,9 @@
             "url": "Demo"
         },
         {
-            "name": "臻享",
-            "type": "1",
-            "url": "https://jk.123zy.cool/jx/jx.php?url=",
+            "name": "巧技解析①",
+            "type": 1,
+            "url": "https://zy.qiaoji8.com/neibu.php?url=",
             "ext": {
                 "flag": [
                     "qq",
@@ -713,9 +665,137 @@
             }
         },
         {
-            "name": "推荐",
+            "name": "巧技解析②",
             "type": 1,
-            "url": "https://jxjson.icu/neibu.php?url=",
+            "url": "https://zy.qiaoji8.com/gouzi.php?url=",
+            "ext": {
+                "flag": [
+                    "qq",
+                    "腾讯",
+                    "qiyi",
+                    "爱奇艺",
+                    "奇艺",
+                    "youku",
+                    "优酷",
+                    "sohu",
+                    "搜狐",
+                    "letv",
+                    "乐视",
+                    "mgtv",
+                    "芒果",
+                    "tnmb",
+                    "seven",
+                    "bilibili",
+                    "1905",
+                    "NetFilx"
+                ],
+                "header": {
+                    "User-Agent": "okhttp/4.9.1"
+                }
+            }
+        },
+        {
+            "name": "巧技网解",
+            "type": "1",
+            "url": "http://pan.qiaoji8.com/tvbox/neibu.php?url=",
+            "ext": {
+                "flag": [
+                    "qq",
+                    "腾讯",
+                    "qiyi",
+                    "爱奇艺",
+                    "奇艺",
+                    "youku",
+                    "优酷",
+                    "sohu",
+                    "搜狐",
+                    "letv",
+                    "乐视",
+                    "mgtv",
+                    "芒果",
+                    "tnmb",
+                    "seven",
+                    "bilibili",
+                    "1905"
+                ],
+                "header": {
+                    "User-Agent": "okhttp/4.9.1"
+                }
+            }
+        },
+        {
+            "name": "至臻",
+            "type": 1,
+            "url": "http://yunhai.qijiyun.vip/home/api?type=ys&uid=177259&key=dijnouxKNOQSTUWXY5&url=",
+            "ext": {
+                "flag": [
+                    "qq",
+                    "腾讯",
+                    "qiyi",
+                    "爱奇艺",
+                    "奇艺",
+                    "youku",
+                    "优酷",
+                    "sohu",
+                    "搜狐",
+                    "letv",
+                    "乐视",
+                    "mgtv",
+                    "芒果",
+                    "tnmb",
+                    "seven",
+                    "bilibili",
+                    "1905"
+                ],
+                "header": {
+                    "User-Agent": "okhttp/4.9.1"
+                }
+            }
+        },
+        {
+            "name": "HGvip",
+            "type": 1,
+            "url": "http://1.94.221.189:88/algorithm.php?url=",
+            "ext": {
+                "flag": [
+                    "hgvip"
+                ],
+                "header": {
+                    "User-Agent": "okhttp/4.9.1"
+                }
+            }
+        },
+        {
+            "name": "皮皮虾",
+            "type": "1",
+            "url": "http://45.207.215.101:5423/index.php?url=",
+            "ext": {
+                "flag": [
+                    "PPXLG",
+                    "皮皮虾4K"
+                ]
+            }
+        },
+        {
+            "name": "无双",
+            "type": 0,
+            "url": " http://103.117.123.193:1980/players/?url=",
+            "ext": {
+                "flag": [
+                    "mgtv",
+                    "芒果",
+                    "RY",
+                    "VIP线路"
+                ],
+                "header": {
+                    "User-Agent": "okhttp/4.9.1"
+                }
+            }
+        },
+        {
+            "name": "臻享",
+            "type": "1",
+            "url": "https://jk.123zy.cool/jx/jx.php?url=",
             "ext": {
                 "flag": [
                     "qq",
